@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: https://ipwon-omdluj-hubs-projects.vercel.app/sitemap.xml
