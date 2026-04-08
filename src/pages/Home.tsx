@@ -1,25 +1,30 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import LanguageSelector from '../components/LanguageSelector'
 import '../App.css'
 
 function Home() {
+  const { t } = useTranslation()
+
   return (
     <div className="landing-page">
+      <LanguageSelector />
       {/* Header */}
       <header className="header">
         <div className="container header-inner">
           <div className="logo">
-            <span className="logo-main">후한의원 구미점</span>
-            <span className="logo-tag">교통사고 1인실 입원치료</span>
+            <span className="logo-main">{t('hospital_name')}</span>
+            <span className="logo-tag">{t('tagline')}</span>
           </div>
           <nav className="nav">
-            <a href="#features">입원실특징</a>
-            <a href="#facilities">시설안내</a>
-            <a href="#process">치료절차</a>
-            <a href="#location">진료시간/위치</a>
+            <a href="#features">{t('nav_features')}</a>
+            <a href="#facilities">{t('nav_facilities')}</a>
+            <a href="#process">{t('nav_process')}</a>
+            <a href="#location">{t('nav_location')}</a>
           </nav>
           <div className="header-contact">
-            <a href="https://pf.kakao.com/_JEGuu" target="_blank" rel="noopener noreferrer" className="btn btn-kakao-sm">카톡상담</a>
-            <a href="tel:054-474-1075" className="btn btn-call">문의 054-474-1075</a>
+            <a href="https://pf.kakao.com/_JEGuu" target="_blank" rel="noopener noreferrer" className="btn btn-kakao-sm">{t('btn_kakao')}</a>
+            <a href="tel:054-474-1075" className="btn btn-call">{t('btn_call')}</a>
           </div>
         </div>
       </header>
@@ -28,18 +33,11 @@ function Home() {
       <section className="hero" style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('/image/KakaoTalk_20230131_100611036.jpg')` }}>
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">
-              교통사고 후유증,<br />
-              <span className="accent">365일 운영 1인실 위주</span><br />
-              쾌적한 입원 환경에서 회복하세요
-            </h1>
-            <p className="hero-sub">
-              사고 접수번호만 있으면 절차 완료! <br />
-              월/화/수/금 야간진료(20:30)로 바쁜 일상 중에도 집중 치료가 가능합니다.
-            </p>
+            <h1 className="hero-title" dangerouslySetInnerHTML={{ __html: t('hero_title') }}></h1>
+            <p className="hero-sub" dangerouslySetInnerHTML={{ __html: t('hero_sub') }}></p>
             <div className="hero-actions">
-              <a href="https://naver.me/5N15Owng" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-lg">네이버 예약</a>
-              <a href="https://pf.kakao.com/_JEGuu" target="_blank" rel="noopener noreferrer" className="btn btn-kakao btn-lg">카톡 상담</a>
+              <a href="https://naver.me/5N15Owng" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-lg">{t('btn_reserve')}</a>
+              <a href="https://pf.kakao.com/_JEGuu" target="_blank" rel="noopener noreferrer" className="btn btn-kakao btn-lg">{t('btn_kakao')}</a>
               <a href="tel:054-474-1075" className="btn btn-accent btn-lg">전화하기</a>
             </div>
           </div>
@@ -49,9 +47,9 @@ function Home() {
       {/* Quick Info Bar */}
       <div className="quick-info">
         <div className="container info-bar-inner">
-          <div className="info-item"><strong>야간진료</strong> 월/화/수/금 (~20:30)</div>
-          <div className="info-item"><strong>입원실</strong> 365일 정상 운영</div>
-          <div className="info-item"><strong>주차안내</strong> 건물 내 무료 타워 주차</div>
+          <div className="info-item"><strong>{t('quick_night')}</strong></div>
+          <div className="info-item"><strong>{t('quick_365')}</strong></div>
+          <div className="info-item"><strong>{t('quick_park')}</strong></div>
         </div>
       </div>
 
