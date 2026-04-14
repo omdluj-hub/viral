@@ -205,6 +205,14 @@ function Home() {
               <a href="/gumi-obesity-clinic.html">구미 비만클리닉</a>
               <a href="/gumi-diet-clinic.html">구미 다이어트 한의원</a>
             </div>
+            <div className="footer-links" style={{ marginTop: '15px' }}>
+              <strong style={{ display: 'block', marginBottom: '5px', color: '#fff' }}>피부/흉터 클리닉</strong>
+              <a href="/gumi-acne-clinic.html">구미 여드름 한의원</a>
+              <a href="/gumi-skin-clinic.html">구미 피부 한의원</a>
+              <a href="/gumi-skin-medical.html">구미 피부클리닉</a>
+              <a href="/gumi-acne-scar.html">구미 여드름흉터</a>
+              <a href="/gumi-saesal-acupuncture.html">구미 새살침</a>
+            </div>
             <p>{t('footer_info')}</p>
             <p>© 2024 Hoo Clinic Gumi. <Link to="/admin" style={{ color: 'inherit', textDecoration: 'none', cursor: 'default' }}>All rights reserved.</Link></p>
           </div>
