@@ -3,170 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>구미 교통사고 입원실 1인실 한의원 - 후한의원 구미점</title>
-    <meta name="description" content="구미 교통사고 입원실을 찾으신다면 1인실 위주의 쾌적한 시설과 365일 진료하는 후한의원 구미점으로 오세요. 사고 접수번호만 있으면 바로 입원 가능합니다.">
+    <title>구미 교통사고 입원실 선택 시 꼭 확인해야 할 3가지 - 후한의원 구미점</title>
+    <meta name="description" content="구미에서 교통사고 후 입원이 필요하신가요? 1인실 위주의 프라이빗한 시설과 안마의자, 개인 TV까지 갖춰진 후한의원 구미점의 쾌적한 입원 환경을 소개합니다.">
     <meta name="keywords" content="구미 교통사고 입원실, 구미 입원실 한의원, 구미 1인실 입원, 구미 교통사고 한의원, 구미 자동차보험 입원">
+    <link rel="canonical" href="https://yourdomain.com/gumi-accident-room.html">
     
-    <!-- Styles -->
     <style>
         :root {
-            --primary-color: #1a237e;
-            --secondary-color: #f8f9fa;
+            --primary-color: #2c3e50;
             --accent-color: #c6a664;
-            --text-dark: #212121;
-            --text-light: #757575;
+            --text-color: #333;
+            --bg-light: #f9f9f9;
             --white: #ffffff;
+            --border-color: #eee;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-            color: var(--text-dark);
-            background-color: var(--secondary-color);
-            line-height: 1.6;
+            color: var(--text-color);
+            line-height: 1.8;
+            background-color: var(--bg-light);
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        /* Header */
+
         .header {
-            position: fixed; top: 0; left: 0; width: 100%; height: 80px;
-            background-color: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-            z-index: 1000; display: flex; align-items: center;
+            background: var(--white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-        .logo { display: flex; flex-direction: column; text-decoration: none; }
-        .logo-main { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); letter-spacing: -1px; }
-        .logo-tag { font-size: 0.8rem; color: var(--text-light); font-weight: 500; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary-color); text-decoration: none; }
+
+        .blog-post {
+            background: var(--white);
+            padding: 60px 0;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .post-header { margin-bottom: 40px; text-align: center; }
+        .post-category { color: var(--accent-color); font-weight: 700; font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        .post-title { font-size: 2.2rem; line-height: 1.3; color: var(--primary-color); word-break: keep-all; }
+        .post-meta { font-size: 0.9rem; color: #999; margin-top: 15px; }
+
+        .post-content h2 { font-size: 1.6rem; color: var(--primary-color); margin: 40px 0 20px; border-left: 5px solid var(--accent-color); padding-left: 15px; }
+        .post-content p { margin-bottom: 25px; font-size: 1.1rem; text-align: justify; word-break: keep-all; }
+        .post-content ul { margin-bottom: 25px; padding-left: 20px; }
+        .post-content li { margin-bottom: 10px; }
         
+        .post-image { width: 100%; border-radius: 8px; margin: 30px 0; }
+        .image-caption { text-align: center; color: #777; font-size: 0.9rem; margin-top: -20px; margin-bottom: 30px; }
+
+        .cta-box {
+            background: #f0f4f8;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 50px 0;
+        }
         .btn {
-            padding: 10px 20px; border-radius: 4px; font-weight: 700;
-            text-decoration: none; transition: all 0.3s; display: inline-block; border: none; cursor: pointer;
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            margin: 5px;
+            transition: 0.3s;
         }
-        .btn-call { background-color: var(--primary-color); color: var(--white); }
-        .btn-kakao-sm { background-color: #FEE500; color: #191919; font-size: 0.85rem; padding: 8px 16px; margin-right: 10px; }
+        .btn-kakao { background: #fee500; color: #3c1e1e; }
+        .btn:hover { opacity: 0.9; }
 
-        /* Hero */
-        .hero {
-            padding-top: 160px; padding-bottom: 80px;
-            background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('/image/KakaoTalk_20230131_100611036.jpg');
-            background-size: cover; background-position: center; text-align: center;
-        }
-        .hero-title { font-size: 3rem; color: var(--primary-color); margin-bottom: 20px; }
-        .hero-title .accent { color: var(--accent-color); }
-        .hero-sub { font-size: 1.2rem; margin-bottom: 30px; }
-        .hero-actions { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn-lg { padding: 15px 30px; font-size: 1.1rem; border-radius: 8px; }
-        .btn-accent { background-color: var(--accent-color); color: var(--white); }
-        .btn-kakao { background-color: #FEE500; color: #191919; }
-
-        /* Sections */
-        section { padding: 80px 0; }
-        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: var(--primary-color); }
-        .section-title::after {
-            content: ''; display: block; width: 50px; height: 3px; background-color: var(--accent-color); margin: 15px auto 0;
-        }
-
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .feature-item { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
-        .feature-icon { font-size: 2.5rem; margin-bottom: 20px; }
-
-        .quick-info { background-color: var(--primary-color); color: white; padding: 20px 0; }
-        .info-bar-inner { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
-        .info-item strong { color: var(--accent-color); margin-right: 8px; }
-
-        /* Footer */
-        .footer { padding: 50px 0; background-color: #212121; color: #bdbdbd; }
-        .footer-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
-        .footer-logo { font-size: 1.3rem; font-weight: 700; color: white; margin-bottom: 20px; }
-        .footer-links { margin-bottom: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-        .footer-links a { color: #bdbdbd; text-decoration: none; font-size: 0.9rem; }
-        .footer-links a:hover { color: white; }
-
-        /* Floating Kakao */
-        .floating-kakao { position: fixed; bottom: 30px; right: 30px; z-index: 2000; text-decoration: none; }
-        .kakao-icon-circle { width: 60px; height: 60px; background-color: #FEE500; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-
+        .footer { background: #333; color: #ccc; padding: 60px 0; font-size: 0.9rem; margin-top: 60px; }
+        .footer-links { margin-bottom: 30px; border-bottom: 1px solid #444; padding-bottom: 20px; }
+        .footer-links a { color: #aaa; text-decoration: none; margin-right: 15px; display: inline-block; margin-bottom: 10px; }
+        .footer-links a:hover { color: var(--white); }
+        
         @media (max-width: 768px) {
-            .hero-title { font-size: 2rem; }
-            .header-contact .btn-kakao-sm { display: none; }
+            .post-title { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container header-inner">
-            <a href="/" class="logo">
-                <span class="logo-main">후한의원 구미점</span>
-                <span class="logo-tag">교통사고 1인실 입원치료</span>
-            </a>
-            <div class="header-contact">
-                <a href="https://pf.kakao.com/_JEGuu" target="_blank" class="btn btn-kakao-sm">카톡상담</a>
-                <a href="tel:054-474-1075" class="btn btn-call">문의 054-474-1075</a>
-            </div>
+            <a href="/" class="logo">후한의원 구미점</a>
+            <a href="tel:054-474-1075" class="btn">문의하기</a>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">구미 교통사고 <span class="accent">입원실 1인실</span><br>쾌적한 환경에서 회복하세요</h1>
-            <p class="hero-sub">프라이빗한 1인실 위주 구성으로 편안한 회복을 돕습니다.<br>365일 연중무휴 입원실 운영!</p>
-            <div class="hero-actions">
-                <a href="https://naver.me/5N15Owng" target="_blank" class="btn btn-accent btn-lg">네이버 예약</a>
-                <a href="https://pf.kakao.com/_JEGuu" target="_blank" class="btn btn-kakao btn-lg">카카오톡 상담</a>
-                <a href="tel:054-474-1075" class="btn btn-call btn-lg">전화 문의하기</a>
+    <main class="container">
+        <article class="blog-post">
+            <div class="post-header">
+                <span class="post-category">교통사고 치료 정보</span>
+                <h1 class="post-title">구미 교통사고 입원실 선택 시 꼭 확인해야 할 3가지</h1>
+                <div class="post-meta">작성자: 후한의원 구미점 | 2024년 5월 22일</div>
             </div>
-        </div>
-    </section>
 
-    <div class="quick-info">
-        <div class="container info-bar-inner">
-            <div class="info-item"><strong>야간진료</strong> 월/화/수/금 (~20:30)</div>
-            <div class="info-item"><strong>365일</strong> 입원실 정상 운영</div>
-            <div class="info-item"><strong>무료주차</strong> 건물 내 타워 주차</div>
-        </div>
-    </div>
+            <div class="post-content">
+                <p>안녕하세요. 후한의원 구미점입니다. 예상치 못한 교통사고는 신체적 통증뿐만 아니라 심리적인 충격까지 안겨주곤 하죠. 사고 직후에는 괜찮은 것 같아도 며칠 뒤 찾아오는 후유증 때문에 고생하시는 분들이 많습니다. 오늘은 구미에서 교통사고 입원실을 찾으시는 분들을 위해, 어떤 점을 중점적으로 체크해야 하는지 블로그 형식으로 편하게 정리해 드릴게요.</p>
 
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">후한의원 구미점 입원실 특징</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">🛌</div>
-                    <h3>프라이빗 1인실 위주</h3>
-                    <p>다인실의 불편함 없이 조용하고 편안하게 회복에만 집중할 수 있습니다.</p>
+                <img src="/image/KakaoTalk_20230131_100611036.jpg" alt="후한의원 구미점 입원실 내부" class="post-image">
+                <p class="image-caption">쾌적하고 안락한 후한의원 구미점의 1인실 내부 전경</p>
+
+                <h2>1. 프라이빗한 1인실 위주의 시설인가?</h2>
+                <p>가장 먼저 확인해야 할 것은 바로 '휴식의 질'입니다. 교통사고 후유증 회복에서 가장 중요한 것은 절대적인 안정이기 때문이죠. 다인실은 주변 소음이나 타인의 시선 때문에 깊은 잠을 자기 어려운 경우가 많습니다.</p>
+                <p>저희 후한의원 구미점은 환자분들이 내 집처럼 편안하게 쉴 수 있도록 <strong>1인실 위주로 입원실을 구성</strong>했습니다. 각 방에는 다음과 같은 편의 시설이 완비되어 있어요.</p>
+                <ul>
+                    <li><strong>개별 안마의자:</strong> 근육 긴장을 풀어주는 프라이빗한 휴식</li>
+                    <li><strong>개인 TV 및 냉장고:</strong> 타인의 방해 없는 자유로운 여가 시간</li>
+                    <li><strong>무선 인터넷(Wi-Fi):</strong> 입원 중에도 끊김 없는 소통</li>
+                </ul>
+
+                <h2>2. 1:1 맞춤형 집중 치료가 이루어지는가?</h2>
+                <p>단순히 쉬기만 하는 것이 아니라, 통증의 원인을 정확히 파악하고 치료하는 것이 중요합니다. 후한의원 구미점에서는 원장님이 직접 환자분의 증상을 세밀하게 진단하여 맞춤형 한방 치료를 시행합니다.</p>
+                <img src="/image/52648234941_b9f0a3393a_o.jpg" alt="한방 치료 모습" class="post-image">
+                <p>침, 약침, 추나요법, 한약 처방 등 복합적인 한방 케어를 통해 어혈을 제거하고 근육과 인대의 회복을 돕습니다. 특히 입원 환자분들께는 하루 두 번의 집중 치료를 통해 더 빠른 일상 복귀를 지원합니다.</p>
+
+                <h2>3. 자동차보험 절차가 간편한가?</h2>
+                <p>사고 수습만으로도 머리가 아픈데, 입원 절차까지 복잡하면 안 되겠죠? 구미 교통사고 입원 한의원인 저희 지점에서는 <strong>사고 접수번호와 담당자 연락처</strong>만 알려주시면 됩니다.</p>
+                <p>나머지 보험사와의 소통 및 지불 보증 절차는 저희가 직접 진행하므로, 환자분께서는 본인부담금 걱정 없이(자보 적용 시) 오로지 치료에만 전념하실 수 있습니다.</p>
+
+                <div class="cta-box">
+                    <h3>후한의원 구미점 진료 및 예약 안내</h3>
+                    <p>365일 입원실 운영 / 평일 야간진료 시행</p>
+                    <a href="tel:054-474-1075" class="btn">전화 문의: 054-474-1075</a>
+                    <a href="https://pf.kakao.com/_JEGuu" target="_blank" class="btn btn-kakao">카카오톡 상담하기</a>
+                    <a href="https://naver.me/5N15Owng" target="_blank" class="btn">네이버 예약</a>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🏥</div>
-                    <h3>365일 집중 케어</h3>
-                    <p>목요일, 일요일, 공휴일에도 입원실은 쉬지 않고 운영되어 빈틈없는 치료가 가능합니다.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">💆</div>
-                    <h3>맞춤형 한방 치료</h3>
-                    <p>침, 약침, 추나요법 등 환자분의 상태에 맞는 1:1 집중 진료를 시행합니다.</p>
-                </div>
+
+                <h2>오시는 길</h2>
+                <p>경북 구미시 인동가산로 9-3, 4층에 위치하고 있습니다. 건물 내 타워 주차가 가능하여 내원 시 불편함을 최소화했습니다.</p>
             </div>
-        </div>
-    </section>
+        </article>
+    </main>
 
     <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-logo">후한의원 구미점</div>
+        <div class="container">
             <div class="footer-links">
                 <a href="/gumi-accident-room.html">구미 교통사고 입원실</a>
-                <a href="/gumi-hospital-clinic.html">구미 한의원 병원</a>
+                <a href="/gumi-hospital-clinic.html">구미 입원실 한의원</a>
                 <a href="/gumi-accident-inpatient.html">구미 교통사고 입원</a>
-                <a href="/gumi-insurance-inpatient.html">구미 보험 입원</a>
+                <a href="/gumi-insurance-inpatient.html">구미 자동차보험 입원</a>
                 <a href="/gumi-inpatient-room.html">구미 입원실</a>
             </div>
             <p>상호: 후한의원 구미점 | 주소: 경북 구미시 인동가산로 9-3, 4층 | TEL: 054-474-1075</p>
             <p>© 2024 Hoo Clinic Gumi. All rights reserved.</p>
         </div>
     </footer>
-
-    <a href="https://pf.kakao.com/_JEGuu" target="_blank" class="floating-kakao">
-        <div class="kakao-icon-circle">💬</div>
-    </a>
 </body>
 </html>
