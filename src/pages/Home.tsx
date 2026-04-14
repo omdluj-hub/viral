@@ -189,6 +189,13 @@ function Home() {
         <div className="container footer-inner">
           <div className="footer-logo">{t('hospital_name')}</div>
           <div className="footer-details">
+            <div className="footer-links">
+              <a href="/gumi-accident-room.html">구미 교통사고 입원실</a>
+              <a href="/gumi-hospital-clinic.html">구미 한의원 병원</a>
+              <a href="/gumi-accident-inpatient.html">구미 교통사고 입원</a>
+              <a href="/gumi-insurance-inpatient.html">구미 보험 입원</a>
+              <a href="/gumi-inpatient-room.html">구미 입원실</a>
+            </div>
             <p>{t('footer_info')}</p>
             <p>© 2024 Hoo Clinic Gumi. <Link to="/admin" style={{ color: 'inherit', textDecoration: 'none', cursor: 'default' }}>All rights reserved.</Link></p>
           </div>

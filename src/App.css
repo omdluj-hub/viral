@@ -368,6 +368,24 @@
   color: white;
 }
 
+.footer-links {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #bdbdbd;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
 .footer-details p {
   font-size: 0.85rem;
   margin-bottom: 5px;
