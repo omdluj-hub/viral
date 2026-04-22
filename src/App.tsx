@@ -7,31 +7,27 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
-    // Traffic tracking logic (for demonstration using localStorage)
-    if (location.pathname === '/') {
-      const trackVisit = () => {
-        const visits = JSON.parse(localStorage.getItem('traffic_data') || '[]')
-        const referrer = document.referrer || 'Direct'
-        const urlParams = new URLSearchParams(window.location.search)
-        const utmSource = urlParams.get('utm_source') || 'None'
-        
-        const newVisit = {
-          timestamp: new Date().toISOString(),
-          referrer,
-          utmSource,
-          path: location.pathname
-        }
-        
-        visits.push(newVisit)
-        // Keep only last 1000 visits to avoid filling localStorage
-        if (visits.length > 1000) visits.shift()
-        localStorage.setItem('traffic_data', JSON.stringify(visits))
+    // Traffic tracking logic for centralized admin page
+    const trackVisit = async () => {
+      try {
+        await fetch('https://adminpage-xi.vercel.app/api/track', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            site_id: 'viral',
+            visited_path: location.pathname,
+            referrer: document.referrer || 'direct',
+            userAgent: navigator.userAgent
+          }),
+          mode: 'no-cors'
+        });
+      } catch (error) {
+        console.error('Tracking request failed:', error);
       }
-      
-      trackVisit()
     }
-  }, [location.pathname])
 
+    trackVisit()
+  }, [location.pathname])
   return (
     <Routes>
       <Route path="/" element={<Home />} />
